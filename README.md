@@ -4,9 +4,12 @@ An interactive, illustrated birthday journey for November 10, 2026. Built as a *
 
 ## Preview
 
-Open `index.html` in a browser. On desktop, navigate with arrow keys or the on-screen controls. On phones and tablets, swipe left/right or use the controls.
+- **[Open index.html in GitHub](https://github.com/dzajic/dad-80th-birthday-card/blob/main/index.html)** — repository file link, accessible to authorized GitHub users. GitHub's standard file view normally shows source, not an executable web page.
+- **[Download the HTML](https://github.com/dzajic/dad-80th-birthday-card/raw/refs/heads/main/index.html)** — requires repository access; save and open the file locally in a browser for an interactive preview.
 
-**Important:** The GitHub repository is private, so a link to the GitHub file is not the actual birthday card experience. To share it with Dad, host the contents of `index.html` on a web site or publish a standalone HTML file.
+On desktop, navigate with arrow keys or the on-screen controls. On phones and tablets, swipe left/right or use the controls.
+
+**Sharing with Dad:** There is **no verified public preview URL yet**. A link to this private GitHub repository will not normally work for someone without access. To give Dad a working link, host the page on a static web host. The private source repository can stay private; hosting the rendered site is a separate choice.
 
 ### Quick hosting options
 
@@ -24,14 +27,15 @@ A moving art exhibition rather than a conventional greeting card. Geometric coll
 2. Prague, 1968 — the great leap
 3. The hitchhiker, miner, taxi driver and photographer
 4. Cameras, art, and memories
-5. The wooded chalet north of Montreal
+5. The wooded chalet in Chertsey
 6. Czech Sokol, hockey, sports and competition
-7. Saco River and Mount Washington
+7. Saco River, Mount Washington and Gatineau Park
 8. Sarasota, New York, and returning to Prague
 9. Modern art and the Pontiac Aztek
 10. Supersonic travel, EVs and Mars
 11. Pride in a remarkable life
-12. Optimism, birthday greeting, and iPad reveal
+12. Optimism and iPad reveal
+13. Happy 80th birthday in English, Czech, French and Russian — Love, Daniel
 
 ## Next improvements
 
