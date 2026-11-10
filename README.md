@@ -1,55 +1,36 @@
-# 80 Years of Wonder — Dad's 80th Birthday
+# Osmdesát let — Dad's 80th birthday
 
-An interactive, illustrated birthday journey for November 10, 2026. Built as a **single self-contained HTML file** (except optional Google Fonts), so it's easy to host and revise.
+An illustrated story for November 10, 2026. Thirteen pages, told to Dad in the second person, in English and Czech, with a French line at the end.
 
-## Live card and preview
+**[Open the card](https://dzajic.github.io/dad-80th-birthday-card/)**
 
-**[Open the animated birthday card](https://dzajic.github.io/dad-80th-birthday-card/)**
+Arrow keys, the buttons along the bottom, or a horizontal swipe. The address `#7` opens a specific page.
 
-This is the **live GitHub Pages site** and the link to send to Dad. It runs the interactive story directly in a browser on a phone, tablet, or laptop; no GitHub login is required.
+## The pictures
 
-- [View the HTML source in GitHub](https://github.com/dzajic/dad-80th-birthday-card/blob/main/index.html)
-- [GitHub Actions deployments](https://github.com/dzajic/dad-80th-birthday-card/actions) — check the `deploy` step if updates have not appeared yet
+The plates are painted in one modernist voice: geometric planes, dry brush, and a mineral palette of ivory, sandstone, ochre, terracotta, sage, and ink. Subjects stay recognizable and correctly proportioned. Prague is Prague. The Aztek keeps its cladding, grille, and stance, and sits in a gallery. The chalet has a steep roof and broad eaves. Hockey is a shot on a goalie. Mount Washington is the Cog Railway on a trestle, and the canoe is a real open canoe with two adults and two children.
 
-Use on-screen previous/next controls, arrow keys on desktop, or left/right swipes on a phone or tablet. GitHub Pages may take a few minutes to reflect new commits.
+The Atlantic map is not a drawing of a map. `scripts/build_map.py` builds it from Natural Earth 1:50m coastlines. Sources and licenses are in [ATTRIBUTION.md](ATTRIBUTION.md).
 
-## Creative direction
+There are no caption bars on the artwork. The only word painted into a plate is **Florida**, set in type over the travel picture.
 
-A moving art exhibition rather than a conventional greeting card. Geometric collage, abstract hand-drawn forms, warm muted color, subtle texture, and animated SVG scenes. Everything works without photo assets, but family photographs or Super 8 stills could be added in a future pass.
+## A few facts, held lightly
 
-## Chapters
+- Photography **possibly** around McGill is marked as uncertain in the story.
+- The idea that his father may already have been in Canada with Hydro-Québec is left out. It was never confirmed.
+- The return to Prague is "around 1990."
+- His father having been Canadian president of Sokol is included as "for a time."
+- The iPad is described as arriving in about two weeks.
+- Nothing here is a photograph of Dad or the family.
 
-1. Eighty years, one remarkable life
-2. Prague, 1968 — the great leap
-3. The hitchhiker, miner, taxi driver and photographer
-4. Cameras, art, and memories
-5. The Swiss-style woodland chalet in Chertsey
-6. Czech Sokol, hockey, sports and competition
-7. Saco River family canoe trip, Mount Washington Cog Railway and Gatineau Park
-8. Florida, New York, and returning to Prague
-9. Modern art and the Pontiac Aztek
-10. Supersonic travel, EVs and Mars
-11. Pride in a remarkable life
-12. Optimism and iPad reveal
-13. Happy 80th birthday in English, Czech and French — Love, Daniel
+## Running it
 
-## Illustration references
+The site is static: `index.html`, `css/`, `js/`, `fonts/`, and `images/`. GitHub Pages serves the repository root. A `.nojekyll` file keeps Pages from filtering the font files.
 
-The illustrations are stylized, but their recognizable subjects were checked against real photo references:
-
-- **[Prague's Charles Bridge and Castle skyline](https://commons.wikimedia.org/wiki/File:Prague_Vltava_River_Charles_Bridge_and_Castle_View.jpg)**, MichaelOpdenacker (CC BY-SA 4.0). Visual reference for the Prague drawing; the photo is not embedded.
-- **[Mount Washington Cog Railway](https://commons.wikimedia.org/wiki/File:Mt._Washington_Cog_Railway.jpg)**, Dnoahg (CC BY-SA 4.0). Visual reference for the trestle/train; the photo is not embedded.
-- **[2002–05 Pontiac Aztek](https://commons.wikimedia.org/wiki/File:2002-05_Pontiac_Aztek.jpg)**, IFCAR (public domain). The Aztek panel loads and color-treats this real photograph from Wikimedia Commons to preserve the actual car shape.
-
-The Aztek panel requires internet access to load its remote photograph. If it appears blank, check the remote asset or replace it with a locally hosted copy.
-
-## Next improvements
-
-- Review biographical wording and chronology with family.
-- Optionally add genuine photographs, Super 8 stills, or a recorded greeting.
-- Test the shared hosted link on Dad's current iPad.
-- Verify final gift wording and delivery timing.
+```bash
+python3 -m http.server 8765
+```
 
 ## Privacy
 
-The live GitHub Pages story is publicly reachable at the link above. Anyone with the URL can open it, regardless of whether the source repository is public or private. Avoid adding personal addresses, sensitive details, or unapproved family photographs to a public deployment.
+Anyone with the link can open the card. It does not include addresses, health details, or family photographs.
