@@ -23,15 +23,25 @@ A moving art exhibition rather than a conventional greeting card. Geometric coll
 2. Prague, 1968 — the great leap
 3. The hitchhiker, miner, taxi driver and photographer
 4. Cameras, art, and memories
-5. The wooded chalet in Chertsey
+5. The Swiss-style woodland chalet in Chertsey
 6. Czech Sokol, hockey, sports and competition
-7. Saco River, Mount Washington and Gatineau Park
-8. Sarasota, New York, and returning to Prague
+7. Saco River family canoe trip, Mount Washington Cog Railway and Gatineau Park
+8. Florida, New York, and returning to Prague
 9. Modern art and the Pontiac Aztek
 10. Supersonic travel, EVs and Mars
 11. Pride in a remarkable life
 12. Optimism and iPad reveal
-13. Happy 80th birthday in English, Czech, French and Russian — Love, Daniel
+13. Happy 80th birthday in English, Czech and French — Love, Daniel
+
+## Illustration references
+
+The illustrations are stylized, but their recognizable subjects were checked against real photo references:
+
+- **[Prague's Charles Bridge and Castle skyline](https://commons.wikimedia.org/wiki/File:Prague_Vltava_River_Charles_Bridge_and_Castle_View.jpg)**, MichaelOpdenacker (CC BY-SA 4.0). Visual reference for the Prague drawing; the photo is not embedded.
+- **[Mount Washington Cog Railway](https://commons.wikimedia.org/wiki/File:Mt._Washington_Cog_Railway.jpg)**, Dnoahg (CC BY-SA 4.0). Visual reference for the trestle/train; the photo is not embedded.
+- **[2002–05 Pontiac Aztek](https://commons.wikimedia.org/wiki/File:2002-05_Pontiac_Aztek.jpg)**, IFCAR (public domain). The Aztek panel loads and color-treats this real photograph from Wikimedia Commons to preserve the actual car shape.
+
+The Aztek panel requires internet access to load its remote photograph. If it appears blank, check the remote asset or replace it with a locally hosted copy.
 
 ## Next improvements
 
