@@ -2,20 +2,16 @@
 
 An interactive, illustrated birthday journey for November 10, 2026. Built as a **single self-contained HTML file** (except optional Google Fonts), so it's easy to host and revise.
 
-## Preview
+## Live card and preview
 
-- **[Open index.html in GitHub](https://github.com/dzajic/dad-80th-birthday-card/blob/main/index.html)** — repository file link, accessible to authorized GitHub users. GitHub's standard file view normally shows source, not an executable web page.
-- **[Download the HTML](https://github.com/dzajic/dad-80th-birthday-card/raw/refs/heads/main/index.html)** — requires repository access; save and open the file locally in a browser for an interactive preview.
+**[Open the animated birthday card](https://dzajic.github.io/dad-80th-birthday-card/)**
 
-On desktop, navigate with arrow keys or the on-screen controls. On phones and tablets, swipe left/right or use the controls.
+This is the **live GitHub Pages site** and the link to send to Dad. It runs the interactive story directly in a browser on a phone, tablet, or laptop; no GitHub login is required.
 
-**Sharing with Dad:** There is **no verified public preview URL yet**. A link to this private GitHub repository will not normally work for someone without access. To give Dad a working link, host the page on a static web host. The private source repository can stay private; hosting the rendered site is a separate choice.
+- [View the HTML source in GitHub](https://github.com/dzajic/dad-80th-birthday-card/blob/main/index.html)
+- [GitHub Actions deployments](https://github.com/dzajic/dad-80th-birthday-card/actions) — check the `deploy` step if updates have not appeared yet
 
-### Quick hosting options
-
-- **Netlify Drop:** Download `index.html`, put it inside a folder, then drag that folder onto [Netlify Drop](https://app.netlify.com/drop) to create a shareable site. Check the generated URL in a private browser window before sending it.
-- **GitHub Pages:** Configure Settings → Pages → Deploy from a branch → main → root, *if your GitHub plan supports Pages on a private repository*. If not, use Netlify instead.
-- **Any static host:** Deploy the repository root; no build command or dependencies are required.
+Use on-screen previous/next controls, arrow keys on desktop, or left/right swipes on a phone or tablet. GitHub Pages may take a few minutes to reflect new commits.
 
 ## Creative direction
 
@@ -46,4 +42,4 @@ A moving art exhibition rather than a conventional greeting card. Geometric coll
 
 ## Privacy
 
-The source repository is private, but **publishing the card to a static site makes the published story accessible to anyone with the URL**, unless the host provides password protection. Avoid adding personal addresses, sensitive details, or unapproved family photographs to a public deployment.
+The live GitHub Pages story is publicly reachable at the link above. Anyone with the URL can open it, regardless of whether the source repository is public or private. Avoid adding personal addresses, sensitive details, or unapproved family photographs to a public deployment.
