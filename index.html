@@ -18,10 +18,12 @@
 .draw{stroke-dasharray:1700;stroke-dashoffset:1700}.active .draw{animation:trace 3.5s 0.25s ease forwards}@keyframes trace{to{stroke-dashoffset:0}}.float{animation:float 7s ease-in-out infinite alternate}.bob{animation:bob 4s ease-in-out infinite}.drift{animation:drift 18s linear infinite}.spin{animation:spin 26s linear infinite;transform-origin:center}.pulse{animation:pulse 4s ease-in-out infinite}@keyframes float{to{transform:translate(13px,-14px) rotate(3deg)}}@keyframes bob{50%{transform:translateY(-10px)}}@keyframes drift{to{transform:translateX(160px)}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes pulse{50%{opacity:.45}}.active .enter{animation:enter 1.4s both;animation-delay:var(--delay,.3s)}@keyframes enter{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
 .orbit{animation:orbit 13s linear infinite;transform-origin:325px 305px}@keyframes orbit{to{transform:rotate(360deg)}}.snow{animation:snow 9s linear infinite}@keyframes snow{to{transform:translateY(900px)}}.road{stroke-dasharray:14 17;animation:road 2s linear infinite}@keyframes road{to{stroke-dashoffset:-62}}.flicker{animation:flicker 2s ease-in-out infinite alternate}@keyframes flicker{to{opacity:.4;transform:scale(.93)}}.speed{animation:speed 1.4s linear infinite}@keyframes speed{to{stroke-dashoffset:-130}}.star{animation:twinkle 2.3s ease-in-out infinite alternate}@keyframes twinkle{to{opacity:.15}}
 .ending .copy h2{font-size:clamp(3.2rem,5.4vw,6.4rem)}.ending .gift{border:1px solid #c49e6b70;padding:20px 24px;margin-top:27px;border-radius:15px;background:#ffffff18;max-width:420px}.gift strong{font-size:1rem;color:#fff}.gift p{font-size:.95rem;margin-top:8px}.tiny{font-size:.7rem!important}
-@media(max-width:760px){.scene{grid-template-columns:1fr;grid-template-rows:53% 47%}.copy{padding:20px 29px 24px;justify-content:safe center}.copy h1,.copy h2{font-size:clamp(2.25rem,8.5vw,3.8rem);margin-bottom:.7rem}.copy p{font-size:clamp(.89rem,3.3vw,1.06rem);line-height:1.5;max-width:unset}.copy .note{margin-top:.6rem;font-size:.75rem}.eyebrow{font-size:.65rem;margin-bottom:.65rem}.top{top:14px;left:14px;right:14px}.controls{bottom:max(8px,env(safe-area-inset-bottom));padding:6px}.controls button{height:37px;width:37px}.ending .copy h2{font-size:clamp(2.5rem,9vw,4rem)}.ending .gift{padding:11px 15px;margin-top:8px}.ending .gift p{margin-top:4px}.ending .copy{padding-bottom:24px}}
+@media(max-width:760px){.scene{grid-template-columns:1fr;grid-template-rows:60% 40%}.copy{padding:10px 18px 58px;justify-content:center;overflow-y:auto}.copy h1,.copy h2{font-size:clamp(1.85rem,7vw,3.4rem);margin-bottom:.7rem}.copy p{font-size:clamp(.83rem,3.1vw,1rem);line-height:1.4;max-width:unset}.copy .note{margin-top:.25rem;font-size:.7rem}.eyebrow{font-size:.65rem;margin-bottom:.4rem}.top{top:14px;left:14px;right:14px}.controls{bottom:max(8px,env(safe-area-inset-bottom));padding:6px}.controls button{height:37px;width:37px}.ending .copy h2{font-size:clamp(2.5rem,9vw,4rem)}.ending .gift{padding:11px 15px;margin-top:8px}.ending .gift p{margin-top:4px}.ending .copy{padding-bottom:58px}}
 @media(max-height:680px){.scene{inset:0 0 66px 0}.copy{justify-content:safe flex-start;overflow-y:auto}.art{min-height:0}.controls{bottom:max(6px,env(safe-area-inset-bottom))}}
 @media(max-height:680px) and (min-width:761px){.copy{padding:40px 7vw}.copy h2{font-size:clamp(2.1rem,4vw,4rem)}.copy p{font-size:1rem;line-height:1.55}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}.draw{stroke-dashoffset:0}}
+@media (max-width:760px) and (max-height:700px){.scene{grid-template-rows:56% 44%}.copy{padding-top:6px;padding-bottom:48px}.copy h1,.copy h2{font-size:clamp(1.65rem,6.6vw,2.6rem)}.copy p{font-size:.81rem;line-height:1.35}.eyebrow{margin-bottom:.25rem}}
+@media (max-width:760px) and (orientation:portrait){.art svg{width:100%;height:100%}.scene .copy{width:100%}}
 </style>
 </head>
 <body>
@@ -31,7 +33,7 @@
 <main id="story" aria-live="polite">
 <!-- 1 -->
 <section class="scene active" lang="cs" style="--bg:#d9c7ae" aria-label="The beginning">
-<div class="art"><svg viewBox="0 0 700 850" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Prague, where it began">
+<div class="art"><svg viewBox="0 0 700 560" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Prague, where it began">
 <rect width="700" height="850" fill="#c7d4ce"/>
 
 <rect width="700" height="560" fill="#c7d4ce"/><circle cx="549" cy="104" r="60" fill="#e2ae76"/>
@@ -53,13 +55,9 @@
 <path d="M110 390v-20m-7 0h14m-7-10v-10" stroke="#344f5a" stroke-width="3" fill="none"/><path d="M235 390v-20m-7 0h14m-7-10v-10" stroke="#344f5a" stroke-width="3" fill="none"/><path d="M370 390v-20m-7 0h14m-7-10v-10" stroke="#344f5a" stroke-width="3" fill="none"/><path d="M505 390v-20m-7 0h14m-7-10v-10" stroke="#344f5a" stroke-width="3" fill="none"/><path d="M630 390v-20m-7 0h14m-7-10v-10" stroke="#344f5a" stroke-width="3" fill="none"/>
 <path d="M0 519Q170 491 360 520T700 497" fill="none" stroke="#cce0d6" stroke-width="5"/>
 
-<rect x="25" y="560" width="650" height="243" fill="#f0e8d8" stroke="#445e62" stroke-width="2"/>
-<path d="M57 624H643M57 756H643" stroke="#c7b397" stroke-width="2"/>
-<text x="57" y="613" font-family="Georgia,serif" font-size="34" fill="#2b4d5b">Prague, where it began</text>
-<text x="57" y="677" font-family="Arial,sans-serif" font-size="17" fill="#96664f" letter-spacing="2">PRAHA  ·  1946</text>
 </svg></div><div class="copy"><div class="eyebrow enter">Životní cesta · 1946–2026</div><h1 class="enter" style="--delay:.5s">Osmdesát let.<br><span class="accent">Jeden neobyčejný život.</span></h1><p class="enter" style="--delay:.7s">Oslava všech míst, která jsi poznal, věcí, které tě nadchly, dobrodružství, která jsi prožil — i obzorů, které máš stále před sebou.</p><p class="note enter" style="--delay:1s">Všechno nejlepší k osmdesátinám, tati.</p></div></section>
 <!-- 2 -->
-<section class="scene" lang="cs" style="--bg:#ccd5d0"><div class="art"><svg viewBox="0 0 700 850" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Simple geographically based map with Atlantic Ocean between eastern Canada and Europe, with a route from Prague via England and France to Montreal">
+<section class="scene" lang="cs" style="--bg:#ccd5d0"><div class="art"><svg viewBox="0 0 700 560" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Simple geographically based map with Atlantic Ocean between eastern Canada and Europe, with a route from Prague via England and France to Montreal">
 <defs><pattern id="carto-grain" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="4" cy="6" r=".65" fill="#fff" opacity=".22"/><circle cx="17" cy="16" r=".7" fill="#233f4c" opacity=".15"/></pattern></defs>
 <rect width="700" height="850" fill="#87aeb0"/>
 <g fill="none" stroke="#d5e4dd" stroke-width="1.3" opacity=".36"><path d="M0 178H700M0 261H700M0 344H700M0 427H700"/><path d="M110 0V560M220 0V560M330 0V560M440 0V560M550 0V560"/></g>
@@ -71,17 +69,10 @@
 <g stroke="#fff3da" stroke-width="3.5" fill="#b96450"><circle cx="563" cy="290" r="9"/><circle cx="483" cy="278" r="9"/><circle cx="497" cy="300" r="9"/><circle cx="79" cy="328" r="11"/></g>
 <g font-family="Arial,sans-serif" font-weight="700" letter-spacing="1.5" fill="#263f4b"><text x="555" y="268" font-size="19">PRAGUE</text><text x="402" y="246" font-size="18">LONDON</text><text x="502" y="326" font-size="18">PARIS</text><text x="36" y="369" font-size="18">MONTRÉAL</text></g>
 <!-- deliberate clean typographic framing, no decorative airplane -->
-<rect x="25" y="560" width="650" height="243" fill="#f0e8d8" stroke="#445e62" stroke-width="2"/>
-<path d="M57 624H643" stroke="#c7b397" stroke-width="2"/>
-<text x="57" y="613" font-family="Georgia,serif" font-size="34" fill="#2b4d5b">A journey across the Atlantic</text>
-<text x="57" y="664" font-family="Arial,sans-serif" font-size="17" fill="#96664f" letter-spacing="2.5">PRAGUE    /    ENGLAND    /    FRANCE    /    CANADA</text>
-<text x="57" y="719" font-family="Georgia,serif" font-size="29" font-style="italic" fill="#365c62">1968 — the beginning of a new life</text>
-<path d="M57 756H643" stroke="#c7b397" stroke-width="2"/>
-<rect width="700" height="850" fill="url(#carto-grain)" pointer-events="none" opacity=".7"/>
 </svg></div>
-<div class="copy"><div class="eyebrow">Kapitola první · Velký skok do neznáma</div><h2>Některé cesty změní <span class="accent">úplně všechno.</span></h2><p>Praha, rok 1968. Opouštíš všechno známé. Přes Anglii a Francii se nakonec dostáváš do Kanady — téměř bez peněz, s omezenou angličtinou a bez jistoty, co tě čeká.</p><p>A ještě před odjezdem se ti podaří najít vlastní maminku v Praze, přestože nevíš, kde bydlí. Právě píše knihu. Neuvěřitelná náhoda — a další důkaz tvé odvahy a vytrvalosti.</p></div></section>
+<div class="copy"><div class="eyebrow">Velký skok do neznáma</div><h2>Některé cesty změní <span class="accent">úplně všechno.</span></h2><p>Praha, rok 1968. Opouštíš všechno známé. Přes Anglii a Francii se nakonec dostáváš do Kanady — téměř bez peněz, s omezenou angličtinou a bez jistoty, co tě čeká.</p><p>A ještě před odjezdem se ti podaří najít vlastní maminku v Paříži, přestože nevíš, kde bydlí. Je tam na návštěvě a pracuje na knize. Neuvěřitelná náhoda — a další důkaz tvé odvahy a vytrvalosti.</p></div></section>
 <!-- 3 -->
-<section class="scene" style="--bg:#e2d4b7"><div class="art"><svg viewBox="0 0 700 850" preserveAspectRatio="xMidYMid meet" role="img" aria-label="An extraordinary new start">
+<section class="scene" style="--bg:#e2d4b7"><div class="art"><svg viewBox="0 0 700 560" preserveAspectRatio="xMidYMid meet" role="img" aria-label="An extraordinary new start">
 <rect width="700" height="850" fill="#d1d6c8"/>
 
 <rect width="700" height="560" fill="#d1d6c8"/>
@@ -104,14 +95,10 @@
 <!-- tiny camera symbol top-right, unmistakable -->
 <g transform="translate(490 100) rotate(8)"><rect x="0" y="25" width="150" height="103" rx="10" fill="#344f5a"/><rect x="25" y="0" width="62" height="28" fill="#344f5a"/><circle cx="76" cy="77" r="42" fill="#e6d6b7"/><circle cx="76" cy="77" r="29" fill="#658b89"/><circle cx="76" cy="77" r="14" fill="#344f5a"/></g>
 
-<rect x="25" y="560" width="650" height="243" fill="#f0e8d8" stroke="#445e62" stroke-width="2"/>
-<path d="M57 624H643M57 756H643" stroke="#c7b397" stroke-width="2"/>
-<text x="57" y="613" font-family="Georgia,serif" font-size="34" fill="#2b4d5b">An extraordinary new start</text>
-<text x="57" y="677" font-family="Arial,sans-serif" font-size="17" fill="#96664f" letter-spacing="2">HITCHHIKER  ·  MINER  ·  TAXI DRIVER</text>
 </svg></div>
-<div class="copy"><div class="eyebrow">Chapter two · No ordinary beginning</div><h2>A life built on <span class="accent">possibility.</span></h2><p>You hitchhiked across Canada, worked in the mines of northern Manitoba, drove a taxi in Montreal, and found your way into photography.</p><p>Not exactly a conventional résumé. Then again, convention was never really your style.</p><p class="note">Every detour became part of the adventure.</p></div></section>
+<div class="copy"><div class="eyebrow">No ordinary beginning</div><h2>A life built on <span class="accent">possibility.</span></h2><p>You hitchhiked across Canada, worked in the mines of northern Manitoba, drove a taxi in Montreal, and found your way into photography.</p><p>Not exactly a conventional résumé. Then again, convention was never really your style.</p><p class="note">Every detour became part of the adventure.</p></div></section>
 <!-- 4 -->
-<section class="scene" style="--bg:#cbbfb0"><div class="art"><svg viewBox="0 0 700 850" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Always looking closer">
+<section class="scene" style="--bg:#cbbfb0"><div class="art"><svg viewBox="0 0 700 560" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Always looking closer">
 <rect width="700" height="850" fill="#d6cdbd"/>
 
 <rect width="700" height="560" fill="#d6cdbd"/>
@@ -131,86 +118,118 @@
 <rect x="50" y="215" width="70" height="27" fill="#d9a26c"/>
 </g>
 
-<rect x="25" y="560" width="650" height="243" fill="#f0e8d8" stroke="#445e62" stroke-width="2"/>
-<path d="M57 624H643M57 756H643" stroke="#c7b397" stroke-width="2"/>
-<text x="57" y="613" font-family="Georgia,serif" font-size="34" fill="#2b4d5b">Always looking closer</text>
-<text x="57" y="677" font-family="Arial,sans-serif" font-size="17" fill="#96664f" letter-spacing="2">PHOTOGRAPHY  ·  FILM  ·  SUPER 8</text>
 </svg></div>
-<div class="copy"><div class="eyebrow">Chapter three · A way of seeing</div><h2>Always looking <span class="accent">closer.</span></h2><p>Photographs, Super 8 movies, cameras and lenses. From film to digital, there was always another idea, another technology, another way to capture the world.</p><p>And as an art teacher, you shared that curiosity and creativity with others.</p><p class="note">You gave our family a remarkable collection of memories—quite literally.</p></div></section>
+<div class="copy"><div class="eyebrow">A way of seeing</div><h2>Always looking <span class="accent">closer.</span></h2><p>Photographs, Super 8 movies, cameras and lenses. From film to digital, there was always another idea, another technology, another way to capture the world.</p><p>And as an art teacher, you shared that curiosity and creativity with others.</p><p class="note">You gave our family a remarkable collection of memories—quite literally.</p></div></section>
 <!-- 5 -->
-<section class="scene" style="--bg:#d0d8d1"><div class="art"><svg viewBox="0 0 700 850" preserveAspectRatio="xMidYMid meet" role="img" aria-label="The cottage in Chertsey">
-<rect width="700" height="850" fill="#c8d9d4"/>
-
-<rect width="700" height="560" fill="#c8d9d4"/>
-<path d="M0 305L130 180 215 277 350 124 486 290 595 185 700 306V560H0Z" fill="#8caaa1"/>
-<g fill="#47736c"><path d="M45 422l35-195 35 195Z"/><path d="M74 412v52" stroke="#344f5a" stroke-width="8"/><path d="M100 422l50-195 50 195Z"/><path d="M129 412v52" stroke="#344f5a" stroke-width="8"/><path d="M610 422l35-195 35 195Z"/><path d="M639 412v52" stroke="#344f5a" stroke-width="8"/><path d="M665 422l50-195 50 195Z"/><path d="M694 412v52" stroke="#344f5a" stroke-width="8"/></g>
-<path d="M0 465Q180 430 343 453T700 439V560H0Z" fill="#f0e8d8"/>
-<!-- 1960s Quebec chalet A-frame roof and wood siding -->
-<path d="M156 293L355 120 560 293" stroke="#344f5a" stroke-width="21" fill="none" stroke-linejoin="round"/>
-<path d="M182 292L356 149 535 292V482H182Z" fill="#bd8e6b" stroke="#344f5a" stroke-width="5"/>
-<path d="M183 318H535" stroke="#946b55" stroke-width="4"/><path d="M183 344H535" stroke="#946b55" stroke-width="4"/><path d="M183 370H535" stroke="#946b55" stroke-width="4"/><path d="M183 396H535" stroke="#946b55" stroke-width="4"/><path d="M183 422H535" stroke="#946b55" stroke-width="4"/><path d="M183 448H535" stroke="#946b55" stroke-width="4"/>
-<path d="M473 238V117h45v156" fill="#ad8369" stroke="#344f5a" stroke-width="4"/>
-<rect x="230" y="300" width="87" height="96" fill="#efce92" stroke="#344f5a" stroke-width="8"/>
-<path d="M273 300v96M230 348h87" stroke="#344f5a" stroke-width="5"/>
-<rect x="397" y="300" width="87" height="96" fill="#efce92" stroke="#344f5a" stroke-width="8"/>
-<path d="M440 300v96M397 348h87" stroke="#344f5a" stroke-width="5"/>
-<rect x="332" y="376" width="59" height="106" fill="#344f5a"/><circle cx="380" cy="439" r="4" fill="#efce92"/>
-<path d="M495 110q-28-29 4-56" stroke="#f0e8d8" stroke-width="12" fill="none" opacity=".6"/>
-<g fill="#faf6ed"><circle cx="40" cy="55" r="3" class="snow"/><circle cx="150" cy="90" r="4" class="snow"/><circle cx="257" cy="125" r="5" class="snow"/><circle cx="375" cy="160" r="3" class="snow"/><circle cx="560" cy="195" r="4" class="snow"/><circle cx="635" cy="230" r="5" class="snow"/></g>
-
-<rect x="25" y="560" width="650" height="243" fill="#f0e8d8" stroke="#445e62" stroke-width="2"/>
-<path d="M57 624H643M57 756H643" stroke="#c7b397" stroke-width="2"/>
-<text x="57" y="613" font-family="Georgia,serif" font-size="34" fill="#2b4d5b">The cottage in Chertsey</text>
-<text x="57" y="677" font-family="Arial,sans-serif" font-size="17" fill="#96664f" letter-spacing="2">SNOWY EASTERS  ·  LONG SUMMER DAYS</text>
-</svg></div>
-<div class="copy"><div class="eyebrow">Chapter four · The magical place</div><h2>A chalet in the <span class="accent">woods.</span></h2><p>Snowy Easters in Chertsey. Long summer days. A fireplace, chopped wood, water pulled by hand from the well—and even a homemade meat smoker.</p><p>The cottage in Chertsey wasn't just a destination. It was a whole world of its own.</p><p class="note">Some of our happiest memories began there.</p></div></section>
+<section class="scene" style="--bg:#d0d8d1"><div class="art"><svg viewBox="0 0 700 560" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Wooden Swiss-style chalet in a snowy Chertsey forest with deep roof eaves and balcony">
+<rect width="700" height="560" fill="#b7d0cf"/><circle cx="542" cy="86" r="59" fill="#e9c68e"/>
+<path d="M0 337L115 218 213 309 352 183 515 315 619 246 700 337V560H0Z" fill="#829f9d"/>
+<g fill="#3f716b"><path d="M-6 414L34 180 76 414Z"/><path d="M32 303v145" stroke="#3f716b" stroke-width="12"/><path d="M56 414L96 180 138 414Z"/><path d="M94 303v145" stroke="#3f716b" stroke-width="12"/><path d="M565 414L605 180 647 414Z"/><path d="M603 303v145" stroke="#3f716b" stroke-width="12"/><path d="M623 414L663 180 705 414Z"/><path d="M661 303v145" stroke="#3f716b" stroke-width="12"/></g>
+<path d="M0 461q182-57 338-16t362-11v126H0Z" fill="#f0e9dc"/>
+<!-- classic Swiss alpine style: steep broad gable, timber balconies, deep projecting eaves -->
+<path d="M117 322L351 87 588 322" stroke="#334d55" stroke-width="26" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+<path d="M157 319L351 122 551 319V507H157Z" fill="#b7835e" stroke="#334d55" stroke-width="7"/>
+<path d="M181 318L351 146 526 318Z" fill="#7c523e"/>
+<path d="M351 148v163M283 236h136" stroke="#d1a77b" stroke-width="6"/>
+<!-- horizontal wooden boards and exposed beams -->
+<path d="M162 354H547" stroke="#875b44" stroke-width="4"/><path d="M162 378H547" stroke="#875b44" stroke-width="4"/><path d="M162 401H547" stroke="#875b44" stroke-width="4"/><path d="M162 427H547" stroke="#875b44" stroke-width="4"/><path d="M162 455H547" stroke="#875b44" stroke-width="4"/><path d="M162 481H547" stroke="#875b44" stroke-width="4"/>
+<g stroke="#eed4ac" stroke-width="6"><path d="M205 300v50M252 300v50M300 300v50M350 300v50M400 300v50M447 300v50M496 300v50"/></g>
+<path d="M166 352H541" stroke="#334d55" stroke-width="13"/>
+<path d="M166 314H541" stroke="#eed4ac" stroke-width="8"/>
+<rect x="215" y="247" width="85" height="65" fill="#efd4a5" stroke="#334d55" stroke-width="8"/><path d="M257 247v65" stroke="#334d55" stroke-width="5"/>
+<rect x="401" y="247" width="85" height="65" fill="#efd4a5" stroke="#334d55" stroke-width="8"/><path d="M442 247v65" stroke="#334d55" stroke-width="5"/>
+<rect x="211" y="386" width="80" height="90" fill="#e8c594" stroke="#334d55" stroke-width="7"/>
+<rect x="407" y="386" width="80" height="90" fill="#e8c594" stroke="#334d55" stroke-width="7"/>
+<path d="M321 507V391h66v116" fill="#415760"/><circle cx="372" cy="444" r="5" fill="#e8c594"/>
+<path d="M452 194V98h44v140" fill="#986f54" stroke="#334d55" stroke-width="5"/>
+<path d="M475 95q-31-29 2-52" fill="none" stroke="#e9e9db" stroke-width="12" opacity=".8"/>
+<g fill="#f5f4e7" class="snow"><circle cx="45" cy="47" r="4"/><circle cx="135" cy="110" r="5"/><circle cx="225" cy="173" r="6"/><circle cx="360" cy="236" r="4"/><circle cx="535" cy="299" r="5"/><circle cx="615" cy="362" r="6"/></g></svg></div>
+<div class="copy"><div class="eyebrow">The magical place</div><h2>A chalet in the <span class="accent">woods.</span></h2><p>Snowy Easters in Chertsey. Long summer days. A fireplace, chopped wood, water pulled by hand from the well—and even a homemade meat smoker.</p><p>The cottage in Chertsey wasn't just a destination. It was a whole world of its own.</p><p class="note">Some of our happiest memories began there.</p></div></section>
 <!-- 6 -->
-<section class="scene" style="--bg:#d9ceab"><div class="art"><svg viewBox="0 0 700 850" preserveAspectRatio="xMidYMid meet" role="img" aria-label="A true sporting spirit">
-<rect width="700" height="850" fill="#d3dedc"/>
-
-<rect width="700" height="560" fill="#d3dedc"/>
-<rect x="58" y="66" width="584" height="424" rx="130" fill="#f5f1e8" stroke="#b96450" stroke-width="11"/>
-<path d="M350 66v424" stroke="#b96450" stroke-width="6"/>
-<circle cx="350" cy="278" r="77" fill="none" stroke="#b96450" stroke-width="7"/>
-<path d="M64 278h135M501 278h135" stroke="#7da7b4" stroke-width="7"/>
-<!-- hockey sticks accurately shaped, puck and red goal -->
-<g transform="translate(190 256) rotate(-24)">
-<path d="M0 0l190 150q20 13 39 0l48-49" stroke="#344f5a" stroke-width="23" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-<path d="M0 0l190 150q20 13 39 0l48-49" stroke="#d9a26c" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<section class="scene" style="--bg:#d9ceab"><div class="art"><svg viewBox="0 0 700 560" preserveAspectRatio="xMidYMid meet" role="img" aria-label="An outdoor hockey scene with a player shooting a puck towards a goalie guarding a red net">
+<rect width="700" height="560" fill="#c7dce0"/><path d="M0 130h700v430H0Z" fill="#e8f2f0"/>
+<path d="M0 242H700M0 486H700" stroke="#be6a65" stroke-width="7"/><path d="M348 130v356" stroke="#b96450" stroke-width="5" opacity=".55"/>
+<path d="M70 388h560" stroke="#bad3d8" stroke-width="5"/>
+<!-- red goal, net with visible netting -->
+<g transform="translate(485 239)">
+<path d="M0 171V27Q65-14 138 27v144Z" fill="#edf4f4" stroke="#b94b45" stroke-width="11" stroke-linejoin="round"/>
+<path d="M20 18v150" stroke="#c4d5d9" stroke-width="2"/><path d="M43 18v150" stroke="#c4d5d9" stroke-width="2"/><path d="M66 18v150" stroke="#c4d5d9" stroke-width="2"/><path d="M89 18v150" stroke="#c4d5d9" stroke-width="2"/><path d="M112 18v150" stroke="#c4d5d9" stroke-width="2"/>
+<path d="M8 55h122" stroke="#c4d5d9" stroke-width="2"/><path d="M8 83h122" stroke="#c4d5d9" stroke-width="2"/><path d="M8 111h122" stroke="#c4d5d9" stroke-width="2"/><path d="M8 139h122" stroke="#c4d5d9" stroke-width="2"/>
 </g>
-<ellipse cx="500" cy="419" rx="37" ry="12" fill="#344f5a"/>
-<!-- visual hint of Sokol emblem, not invention of official logo -->
-<g transform="translate(72 95)"><circle cx="95" cy="64" r="58" fill="#f0e8d8" stroke="#b96450" stroke-width="4"/><text x="95" y="55" text-anchor="middle" fill="#344f5a" font-size="27" font-family="Georgia,serif">SOKOL</text><path d="M58 74h74" stroke="#b96450" stroke-width="5"/></g>
-
-<rect x="25" y="560" width="650" height="243" fill="#f0e8d8" stroke="#445e62" stroke-width="2"/>
-<path d="M57 624H643M57 756H643" stroke="#c7b397" stroke-width="2"/>
-<text x="57" y="613" font-family="Georgia,serif" font-size="34" fill="#2b4d5b">A true sporting spirit</text>
-<text x="57" y="677" font-family="Arial,sans-serif" font-size="17" fill="#96664f" letter-spacing="2">HOCKEY  ·  SOKOL  ·  TENNIS</text>
-</svg></div>
-<div class="copy"><div class="eyebrow">Chapter five · A competitive spirit</div><h2>Never one to <span class="accent">sit out.</span></h2><p>Hockey, soccer, tennis, table tennis, running, marathons—and, long before that, weightlifting.</p><p>Through Sokol and the Czech community, you helped keep a remarkable tradition alive: summers of friendship, competition, and belonging.</p><p class="note">And yes, you always played to win.</p></div></section>
+<!-- goalie crouched in pads and mask -->
+<g transform="translate(544 302)">
+<path d="M-34 74l-18 85h45l16-66M28 75l4 90h44l-18-104" fill="#e5e8db" stroke="#334d5a" stroke-width="6"/>
+<path d="M-38-7q42-28 77 1l17 88h-98Z" fill="#d0a06d" stroke="#344e5b" stroke-width="7"/>
+<circle cx="0" cy="-37" r="30" fill="#efede1" stroke="#344e5b" stroke-width="6"/>
+<path d="M-18-43h36M-20-33h40M0-65v55" stroke="#344e5b" stroke-width="3"/>
+<path d="M-38 7l-54 84M39 8l68 54" stroke="#344e5b" stroke-width="14" stroke-linecap="round"/>
+<rect x="-117" y="71" width="48" height="25" rx="8" fill="#e2e5db" stroke="#344e5b" stroke-width="4"/>
+<path d="M87 56l15 87 23 6" stroke="#b77b50" stroke-width="8" fill="none"/>
+</g>
+<!-- player accelerating, planted skate, red jersey, one hockey stick swinging -->
+<g transform="translate(218 252)">
+<path d="M-28 52l70 15 31 66" stroke="#304b59" stroke-width="18" fill="none" stroke-linecap="round"/>
+<path d="M-28 53l-80 62-26 37" stroke="#304b59" stroke-width="18" fill="none" stroke-linecap="round"/>
+<path d="M73 130l52 8M-140 155l62-4" stroke="#2d4252" stroke-width="10" stroke-linecap="round"/>
+<path d="M-43-45l69-16 45 89-82 33Z" fill="#b96450" stroke="#304b59" stroke-width="7"/>
+<path d="M-42-30l74-20" stroke="#f1e5d3" stroke-width="8"/>
+<circle cx="-15" cy="-81" r="30" fill="#e3b38a" stroke="#344e5a" stroke-width="6"/>
+<path d="M-46-91q14-33 49-24l20 17-9 16-43-1" fill="#304b59"/>
+<path d="M37-38l97 56M-38-17l105 23" stroke="#e3b38a" stroke-width="15" stroke-linecap="round"/>
+<!-- stick and puck -->
+<path d="M127 13l99 127 59-4" fill="none" stroke="#344e5a" stroke-width="12" stroke-linejoin="round"/><path d="M127 13l99 127 59-4" fill="none" stroke="#d6a56d" stroke-width="5"/>
+</g>
+<ellipse cx="481" cy="435" rx="18" ry="7" fill="#233944"/>
+<path d="M416 448L478 440" stroke="#a7c6ca" stroke-width="3" stroke-dasharray="7 6"/></svg></div>
+<div class="copy"><div class="eyebrow">A competitive spirit</div><h2>Never one to <span class="accent">sit out.</span></h2><p>Hockey, soccer, tennis, table tennis, running, marathons—and, long before that, weightlifting.</p><p>Through Sokol and the Czech community, you helped keep a remarkable tradition alive: summers of friendship, competition, and belonging.</p><p class="note">And yes, you always played to win.</p></div></section>
 <!-- 7 -->
-<section class="scene" style="--bg:#b7c9bf"><div class="art"><svg viewBox="0 0 700 850" preserveAspectRatio="xMidYMid meet" role="img" aria-label="The White Mountains">
-<rect width="700" height="850" fill="#c5d9d7"/>
-
-<rect width="700" height="560" fill="#c5d9d7"/><circle cx="555" cy="90" r="55" fill="#e7bd85"/>
-<!-- Presidential Range, rocky wind-swept summit and observatory silhouette -->
-<path d="M0 348L97 265 173 310 299 126 403 268 466 220 575 331 644 270 700 333V560H0Z" fill="#718f89"/>
-<path d="M221 234l78-108 76 104-53-19-21-35-31 40Z" fill="#ede8da"/>
-<path d="M287 134v-22h24v22M295 111V94" stroke="#344f5a" stroke-width="4" fill="none"/>
-<path d="M0 386q150-50 290 5t410-25V560H0Z" fill="#5f8a82"/>
-<path d="M0 448q260-67 460 19t240-27V560H0Z" fill="#49869a"/>
-<path d="M0 495q170-45 340 4t360-16" stroke="#c2ddd4" stroke-width="9" fill="none"/>
-<!-- canoe with human, realistic canoe silhouette -->
-<g class="bob"><path d="M167 412q184 50 366 0-69 90-183 92-120 0-183-92Z" fill="#bc7752" stroke="#344f5a" stroke-width="6"/><path d="M178 414q177 41 344 0" fill="none" stroke="#efd6ab" stroke-width="6"/><circle cx="328" cy="350" r="21" fill="#d9ad86"/><path d="M319 374l-25 49 40 26 35-26" fill="none" stroke="#344f5a" stroke-width="14" stroke-linecap="round"/><path d="M376 360l-35 150" stroke="#e6d6b7" stroke-width="9"/><path d="M323 500l37 9 23 20-54-2Z" fill="#d7a672"/></g>
-
-<rect x="25" y="560" width="650" height="243" fill="#f0e8d8" stroke="#445e62" stroke-width="2"/>
-<path d="M57 624H643M57 756H643" stroke="#c7b397" stroke-width="2"/>
-<text x="57" y="613" font-family="Georgia,serif" font-size="34" fill="#2b4d5b">The White Mountains</text>
-<text x="57" y="677" font-family="Arial,sans-serif" font-size="17" fill="#96664f" letter-spacing="2">MOUNT WASHINGTON  ·  THE SACO RIVER</text>
-</svg></div>
-<div class="copy"><div class="eyebrow">Chapter six · Mountains and rivers</div><h2>Always another <span class="accent">horizon.</span></h2><p>Hiking Mount Washington. Driving the Auto Road. Canoeing the Saco River. And cross-country skiing in Gatineau Park, pulling me along in a sled when I was a baby.</p><p>Those White Mountain adventures became a lasting part of our family's story—and the landscape I eventually chose to call home.</p></div></section>
+<section class="scene" style="--bg:#b7c9bf"><div class="art"><svg viewBox="0 0 700 560" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Mount Washington with its Cog Railway climbing a trestle above a broad river and four family members paddling a traditional canoe">
+<rect width="700" height="560" fill="#bbd4d5"/><circle cx="554" cy="83" r="65" fill="#e9c58a"/>
+<!-- mountains and recognizable summit -->
+<path d="M0 341L124 224 204 275 320 115 424 270 525 205 700 325V560H0Z" fill="#7d9996"/>
+<path d="M258 211l62-96 71 110-48-18-24-43-25 42Z" fill="#eeebe1"/>
+<path d="M310 124v-16h22v16M321 108V88" stroke="#344e59" stroke-width="5" fill="none"/>
+<!-- cog railway trestle diagonal rising up the mountain -->
+<path d="M24 345L368 225" stroke="#604f45" stroke-width="13" fill="none"/>
+<path d="M20 326L364 206" stroke="#b58158" stroke-width="10" fill="none"/>
+<path d="M24 328v38" stroke="#5d5145" stroke-width="4"/><path d="M51 318.6v40" stroke="#5d5145" stroke-width="4"/><path d="M78 309.2v42" stroke="#5d5145" stroke-width="4"/><path d="M105 299.8v44" stroke="#5d5145" stroke-width="4"/><path d="M132 290.4v46" stroke="#5d5145" stroke-width="4"/><path d="M159 281v48" stroke="#5d5145" stroke-width="4"/><path d="M186 271.6v50" stroke="#5d5145" stroke-width="4"/><path d="M213 262.2v52" stroke="#5d5145" stroke-width="4"/><path d="M240 252.8v54" stroke="#5d5145" stroke-width="4"/><path d="M267 243.39999999999998v56" stroke="#5d5145" stroke-width="4"/><path d="M294 234v58" stroke="#5d5145" stroke-width="4"/><path d="M321 224.6v60" stroke="#5d5145" stroke-width="4"/><path d="M348 215.2v62" stroke="#5d5145" stroke-width="4"/>
+<!-- locomotive with coach correct boxy Cog Railway shape aligned with rail incline -->
+<g transform="translate(140 263) rotate(-19)">
+<rect x="0" y="0" width="164" height="54" rx="5" fill="#a25156" stroke="#334b55" stroke-width="5"/>
+<rect x="10" y="10" width="21" height="20" fill="#d5e6df"/>
+<rect x="40" y="10" width="21" height="20" fill="#d5e6df"/>
+<rect x="70" y="10" width="21" height="20" fill="#d5e6df"/>
+<rect x="100" y="10" width="21" height="20" fill="#d5e6df"/>
+<rect x="130" y="10" width="21" height="20" fill="#d5e6df"/>
+<path d="M0 55h164" stroke="#334b55" stroke-width="9"/>
+<circle cx="31" cy="59" r="7" fill="#263e4a"/><circle cx="129" cy="59" r="7" fill="#263e4a"/>
+<rect x="168" y="12" width="52" height="43" fill="#d9a26c" stroke="#334b55" stroke-width="5"/>
+<rect x="181" y="19" width="24" height="20" fill="#aac9c9"/>
+</g>
+<!-- lush shoreline and wide Saco -->
+<path d="M0 376q160-59 330-12t370-16v212H0Z" fill="#668e86"/>
+<path d="M0 437q260-85 438-6t262-19v148H0Z" fill="#548c9b"/>
+<path d="M0 503q225-60 420-13t280-13" stroke="#c5ded6" stroke-width="9" fill="none"/>
+<!-- 4 identifiable human figures arranged tandem in one classic canoe -->
+<g transform="translate(87 377)">
+<!-- correct canoe: long pointed bow and stern, shallow sheerline, interior seats -->
+<path d="M0 68q242 46 500-2-74 90-247 91Q92 160 0 68Z" fill="#bb6d4f" stroke="#334b55" stroke-width="8"/>
+<path d="M5 69q244 32 492-3" stroke="#ead8ae" stroke-width="7" fill="none"/>
+<path d="M105 86h73M240 84h77M373 80h66" stroke="#8e5540" stroke-width="9"/>
+<!-- adult at rear -->
+<g transform="translate(93 0)"><circle cx="0" cy="0" r="20" fill="#deb68e"/><path d="M-23 25h46l11 66h-65Z" fill="#bd6250" stroke="#354c56" stroke-width="4"/><path d="M23 34l43 25" stroke="#deb68e" stroke-width="11" stroke-linecap="round"/></g>
+<!-- child -->
+<g transform="translate(202 35)"><circle r="15" fill="#d7ad88"/><path d="M-18 21h36l10 48h-53Z" fill="#d7a269" stroke="#354c56" stroke-width="4"/></g>
+<!-- child -->
+<g transform="translate(291 33)"><circle r="15" fill="#d7ad88"/><path d="M-18 21h36l10 48h-53Z" fill="#7f9f95" stroke="#354c56" stroke-width="4"/></g>
+<!-- adult at bow -->
+<g transform="translate(402 5)"><circle r="20" fill="#deb68e"/><path d="M-24 25h48l8 64h-65Z" fill="#ba6d58" stroke="#354c56" stroke-width="4"/><path d="M24 36l50 28" stroke="#deb68e" stroke-width="11" stroke-linecap="round"/></g>
+<path d="M154 38l-31 136M475 42l-27 130" stroke="#d4ac78" stroke-width="7"/>
+<path d="M103 160l41 21 11 18-54-5Z" fill="#e0bb85"/><path d="M432 165l34 13 13 26-58-13Z" fill="#e0bb85"/>
+</g></svg></div>
+<div class="copy"><div class="eyebrow">Mountains and rivers</div><h2>Always another <span class="accent">horizon.</span></h2><p>Hiking Mount Washington. Driving the Auto Road. Canoeing the Saco River. And cross-country skiing in Gatineau Park, pulling me along in a sled when I was a baby.</p><p>Those White Mountain adventures became a lasting part of our family's story—and the landscape I eventually chose to call home.</p></div></section>
 <!-- 8 -->
-<section class="scene" style="--bg:#e2cfac"><div class="art"><svg viewBox="0 0 700 850" preserveAspectRatio="xMidYMid meet" role="img" aria-label="The world was waiting">
+<section class="scene" style="--bg:#e2cfac"><div class="art"><svg viewBox="0 0 700 560" preserveAspectRatio="xMidYMid meet" role="img" aria-label="The world was waiting">
 <rect width="700" height="850" fill="#e5d7bd"/>
 
 <rect width="700" height="560" fill="#e5d7bd"/>
@@ -225,68 +244,44 @@
 <path d="M124 65V37" stroke="#486775" stroke-width="6"/><g stroke="#7393a0" stroke-width="2"><path d="M100 68v160M198 69v159"/><path d="M112 68v160M210 69v159"/><path d="M124 68v160M222 69v159"/><path d="M136 68v160M234 69v159"/><path d="M148 68v160M246 69v159"/></g>
 <text x="192" y="263" font-family="Georgia,serif" font-size="26" fill="#344f5a" text-anchor="middle">NEW YORK</text></g>
 
-<rect x="25" y="560" width="650" height="243" fill="#f0e8d8" stroke="#445e62" stroke-width="2"/>
-<path d="M57 624H643M57 756H643" stroke="#c7b397" stroke-width="2"/>
-<text x="57" y="613" font-family="Georgia,serif" font-size="34" fill="#2b4d5b">The world was waiting</text>
-<text x="57" y="677" font-family="Arial,sans-serif" font-size="17" fill="#96664f" letter-spacing="2">SARASOTA  ·  NEW YORK  ·  PRAGUE</text>
 </svg></div>
-<div class="copy"><div class="eyebrow">Chapter seven · On the road again</div><h2>From snowbanks to <span class="accent">palm trees.</span></h2><p>Road trips to Sarasota. Adventures in New York City. A journey together to the top of the Twin Towers, back when they still stood.</p><p>And a return to Prague together after the Velvet Revolution—a remarkable circle completed.</p><p class="note">The world was always worth seeing.</p></div></section>
+<div class="copy"><div class="eyebrow">On the road again</div><h2>From snowbanks to <span class="accent">palm trees.</span></h2><p>Road trips to Florida. Adventures in New York City. A journey together to the top of the Twin Towers, back when they still stood.</p><p>And a return to Prague together after the Velvet Revolution—a remarkable circle completed.</p><p class="note">The world was always worth seeing.</p></div></section>
 <!-- 9 -->
-<section class="scene" style="--bg:#d9d3c5"><div class="art"><svg viewBox="0 0 700 850" preserveAspectRatio="xMidYMid meet" role="img" aria-label="A misunderstood masterpiece">
-<rect width="700" height="850" fill="#e2ddd3"/>
-
-<rect width="700" height="560" fill="#e2ddd3"/>
-<rect x="36" y="32" width="628" height="492" fill="#f3ede2" stroke="#bcae99" stroke-width="3"/>
-<text x="350" y="76" font-family="Georgia,serif" font-size="22" letter-spacing="3" text-anchor="middle" fill="#344f5a">GALLERY OF UNEXPECTED BEAUTY</text>
-<path d="M60 467h580" stroke="#a7a092" stroke-width="3"/><ellipse cx="350" cy="465" rx="265" ry="33" fill="#acb4ae"/>
-<!-- Aztek front 3/4: angular wedge, two-tier lamps, trapezoidal greenhouse, contrasting cladding -->
-<g transform="translate(66 108)">
-<path d="M87 271l74-108q24-36 72-43l166-14q42-1 67 31l54 75 42 49-5 99-500 16-23-62Z" fill="#c6a384" stroke="#344f5a" stroke-width="7" stroke-linejoin="round"/>
-<path d="M175 170q25-33 63-35l154-15q30 0 47 27l43 80-330 26Z" fill="#88aeb1" stroke="#344f5a" stroke-width="6"/>
-<path d="M296 128l17 116" stroke="#344f5a" stroke-width="7"/>
-<path d="M93 269l447-30 18 29-6 92-502 16-20-57Z" fill="#d7b28f" stroke="#344f5a" stroke-width="6"/>
-<path d="M49 340l507-32-4 50-499 16Z" fill="#535a59" stroke="#344f5a" stroke-width="5"/>
-<!-- double separated headlamp tiers -->
-<path d="M54 294l93-20-14 24-77 17Z" fill="#f3e9d5" stroke="#344f5a" stroke-width="4"/>
-<path d="M57 322l84-15-10 18-73 14Z" fill="#e4c88f" stroke="#344f5a" stroke-width="4"/>
-<path d="M470 256l59-11 20 23-69 10Z" fill="#f3e9d5" stroke="#344f5a" stroke-width="4"/>
-<path d="M479 287l65-9 7 18-69 10Z" fill="#e4c88f" stroke="#344f5a" stroke-width="4"/>
-<circle cx="158" cy="366" r="47" fill="#344f5a"/><circle cx="158" cy="366" r="26" fill="#b6c3bd" stroke="#7e989a" stroke-width="8"/>
-<circle cx="476" cy="360" r="47" fill="#344f5a"/><circle cx="476" cy="360" r="26" fill="#b6c3bd" stroke="#7e989a" stroke-width="8"/>
+<section class="scene" style="--bg:#d9d3c5"><div class="art"><svg viewBox="0 0 700 560" preserveAspectRatio="xMidYMid meet" role="img" aria-label="A real Pontiac Aztek photograph treated as a modernist gallery illustration">
+<rect width="700" height="560" fill="#dfd7c7"/>
+<rect x="28" y="28" width="644" height="504" fill="#e3d5bd" stroke="#344f5a" stroke-width="3"/>
+<defs><clipPath id="aztekFrame"><rect x="42" y="42" width="616" height="476"/></clipPath>
+<filter id="aztekArt"><feColorMatrix type="saturate" values=".48"/><feComponentTransfer><feFuncR type="gamma" amplitude="1.04" exponent=".9"/><feFuncG type="gamma" amplitude=".97" exponent="1"/><feFuncB type="gamma" amplitude=".89" exponent="1.06"/></feComponentTransfer></filter></defs>
+<g clip-path="url(#aztekFrame)">
+<image href="https://commons.wikimedia.org/wiki/Special:FilePath/2002-05_Pontiac_Aztek.jpg" x="42" y="42" width="616" height="476" preserveAspectRatio="xMidYMid meet" filter="url(#aztekArt)"/>
+<path d="M42 42h616v476H42Z" fill="none" stroke="#e5cba3" stroke-width="8"/>
 </g>
-
-<rect x="25" y="560" width="650" height="243" fill="#f0e8d8" stroke="#445e62" stroke-width="2"/>
-<path d="M57 624H643M57 756H643" stroke="#c7b397" stroke-width="2"/>
-<text x="57" y="613" font-family="Georgia,serif" font-size="34" fill="#2b4d5b">A misunderstood masterpiece</text>
-<text x="57" y="677" font-family="Arial,sans-serif" font-size="17" fill="#96664f" letter-spacing="2">PONTIAC AZTEK  ·  UNCONVENTIONAL BY DESIGN</text>
-</svg></div>
-<div class="copy"><div class="eyebrow">Chapter eight · An eye for the unusual</div><h2>Great taste. <span class="accent">According to you.</span></h2><p>Picasso. Dalí. Henry Moore. Unconventional shapes, striking ideas, and beauty where others might not look.</p><p>Which may explain your appreciation for that most misunderstood masterpiece of automotive design: the Pontiac Aztek.</p><p class="note">Fashion comes and goes. Independent judgment lasts forever.</p></div></section>
+<path d="M42 42L160 42" stroke="#b96450" stroke-width="8"/>
+<path d="M42 518h140" stroke="#344f5a" stroke-width="8"/></svg></div>
+<div class="copy"><div class="eyebrow">An eye for the unusual</div><h2>Great taste. <span class="accent">According to you.</span></h2><p>Picasso. Dalí. Henry Moore. Unconventional shapes, striking ideas, and beauty where others might not look.</p><p>Which may explain your appreciation for that most misunderstood masterpiece of automotive design: the Pontiac Aztek.</p><p class="note">Fashion comes and goes. Independent judgment lasts forever.</p></div></section>
 <!-- 10 -->
-<section class="scene dark" style="--bg:#172b38"><div class="art"><svg viewBox="0 0 700 850" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Still looking to the future">
-<rect width="700" height="850" fill="#243d51"/>
-
-<rect width="700" height="560" fill="#243d51"/><circle cx="562" cy="124" r="89" fill="#c17e62"/>
-<path d="M525 111q60-38 103 21" stroke="#e1af84" stroke-width="13" fill="none"/>
-<g fill="#e7dbc0"><circle cx="39" cy="42" r="2" class="star"/><circle cx="122" cy="179" r="3" class="star"/><circle cx="205" cy="316" r="4" class="star"/><circle cx="288" cy="453" r="2" class="star"/><circle cx="371" cy="50" r="3" class="star"/><circle cx="454" cy="187" r="4" class="star"/><circle cx="537" cy="324" r="2" class="star"/><circle cx="620" cy="461" r="3" class="star"/><circle cx="3" cy="58" r="4" class="star"/><circle cx="86" cy="195" r="2" class="star"/><circle cx="169" cy="332" r="3" class="star"/><circle cx="252" cy="469" r="4" class="star"/><circle cx="335" cy="66" r="2" class="star"/><circle cx="418" cy="203" r="3" class="star"/><circle cx="501" cy="340" r="4" class="star"/><circle cx="584" cy="477" r="2" class="star"/><circle cx="667" cy="74" r="3" class="star"/></g>
-<!-- delta-wing aircraft -->
-<g transform="translate(48 117) rotate(-12 220 70)"><path d="M0 90l230-31L396 0l-36 64 36 65-166-50Z" fill="#ece9dc" stroke="#a1b9b7" stroke-width="4"/><path d="M210 64l87-25-31 29 31 30-87-24Z" fill="#77969c"/><path d="M16 83l160-13" stroke="#344f5a" stroke-width="3"/></g>
-<!-- rocket with realistic capsule, fins and engine -->
-<g transform="translate(325 300) rotate(22)">
-<path d="M0-175q79 76 75 221h-150q-4-145 75-221Z" fill="#f2eee1" stroke="#a6bdbb" stroke-width="5"/>
-<path d="M0-175q79 76 75 221H0Z" fill="#a9c5c3"/>
-<circle cx="0" cy="-40" r="35" fill="#5c8393" stroke="#dba578" stroke-width="8"/>
-<path d="M-67 4l-79 110 80-39M67 4l79 110-80-39" fill="#bf6d55" stroke="#e8b28d" stroke-width="5"/>
-<path d="M-27 46l27 122 27-122" fill="#e6a15c" class="flicker"/>
+<section class="scene dark" style="--bg:#172b38"><div class="art"><svg viewBox="0 0 700 560" preserveAspectRatio="xMidYMid meet" role="img" aria-label="A delta-wing supersonic aircraft above a rocket traveling toward Mars in the night sky">
+<rect width="700" height="560" fill="#203d51"/><circle cx="562" cy="130" r="86" fill="#bf7962"/>
+<path d="M523 111q61-29 107 17" stroke="#dca583" stroke-width="13" fill="none"/>
+<g fill="#f0e6cf"><circle cx="39" cy="42" r="2"/><circle cx="122" cy="179" r="3"/><circle cx="205" cy="316" r="4"/><circle cx="288" cy="453" r="2"/><circle cx="371" cy="50" r="3"/><circle cx="454" cy="187" r="4"/><circle cx="537" cy="324" r="2"/><circle cx="620" cy="461" r="3"/><circle cx="18" cy="58" r="4"/><circle cx="101" cy="195" r="2"/><circle cx="184" cy="332" r="3"/><circle cx="267" cy="469" r="4"/><circle cx="350" cy="66" r="2"/><circle cx="433" cy="203" r="3"/><circle cx="516" cy="340" r="4"/><circle cx="599" cy="477" r="2"/><circle cx="682" cy="74" r="3"/><circle cx="80" cy="211" r="4"/><circle cx="163" cy="348" r="2"/><circle cx="246" cy="485" r="3"/><circle cx="329" cy="82" r="4"/><circle cx="412" cy="219" r="2"/></g>
+<!-- Concorde-style swept delta airplane -->
+<g transform="translate(40 109) rotate(-11 220 70)">
+<path d="M0 93l231-29L390 0l-37 64 39 64-164-48Z" fill="#ecede6" stroke="#9bb4b4" stroke-width="4"/>
+<path d="M213 67l76-23-20 26 20 29-76-26Z" fill="#6f9099"/>
+<path d="M20 84l160-10" stroke="#344e5a" stroke-width="3"/>
 </g>
-
-<rect x="25" y="560" width="650" height="243" fill="#f0e8d8" stroke="#445e62" stroke-width="2"/>
-<path d="M57 624H643M57 756H643" stroke="#c7b397" stroke-width="2"/>
-<text x="57" y="613" font-family="Georgia,serif" font-size="34" fill="#2b4d5b">Still looking to the future</text>
-<text x="57" y="677" font-family="Arial,sans-serif" font-size="17" fill="#96664f" letter-spacing="2">SUPERSONIC FLIGHT  ·  SPACE  ·  MARS</text>
-</svg></div>
-<div class="copy"><div class="eyebrow">Chapter nine · What's next?</div><h2>Still looking <span style="color:#e0ad76">up.</span></h2><p>From classic cars to electric ones. From film cameras to digital marvels. From the dreams of supersonic flight to the possibility of people walking on Mars.</p><p>You've witnessed extraordinary changes—and you've never stopped wondering what might come next.</p><p class="note">The future has always been one of your favorite subjects.</p></div></section>
+<!-- A single rocket, with no overlapping ghost or background white shape -->
+<g transform="translate(357 358) rotate(22)">
+<path d="M0-175q78 80 73 211H-73Q-78-95 0-175Z" fill="#e8e9df" stroke="#9bb6bb" stroke-width="6"/>
+<path d="M0-175q78 80 73 211H0Z" fill="#a2c1c4"/>
+<circle cx="0" cy="-41" r="34" fill="#446c7e" stroke="#dba875" stroke-width="8"/>
+<path d="M-67 1l-75 116 77-33M67 1l75 116-77-33" fill="#b96750" stroke="#e4b28a" stroke-width="5"/>
+<path d="M-35 36l35 137L35 36" fill="#e5a05d"/>
+<path d="M-16 38l16 95 16-95" fill="#f3d4a0"/>
+</g></svg></div>
+<div class="copy"><div class="eyebrow">What's next?</div><h2>Still looking <span style="color:#e0ad76">up.</span></h2><p>From classic cars to electric ones. From film cameras to digital marvels. From the dreams of supersonic flight to the possibility of people walking on Mars.</p><p>You've witnessed extraordinary changes—and you've never stopped wondering what might come next.</p><p class="note">The future has always been one of your favorite subjects.</p></div></section>
 <!-- 11 -->
-<section class="scene" lang="cs" style="--bg:#b7c9bb"><div class="art"><svg viewBox="0 0 700 850" preserveAspectRatio="xMidYMid meet" role="img" aria-label="An extraordinary journey">
+<section class="scene" lang="cs" style="--bg:#b7c9bb"><div class="art"><svg viewBox="0 0 700 560" preserveAspectRatio="xMidYMid meet" role="img" aria-label="An extraordinary journey">
 <rect width="700" height="850" fill="#c6d6cc"/>
 
 <rect width="700" height="560" fill="#c6d6cc"/><circle cx="523" cy="130" r="88" fill="#eab982"/>
@@ -297,14 +292,10 @@
 <!-- distant upright trail marker -->
 <path d="M528 285v-92" stroke="#344f5a" stroke-width="8"/><path d="M531 198h57l-20 18 20 20h-57Z" fill="#d9a26c" stroke="#344f5a" stroke-width="4"/>
 
-<rect x="25" y="560" width="650" height="243" fill="#f0e8d8" stroke="#445e62" stroke-width="2"/>
-<path d="M57 624H643M57 756H643" stroke="#c7b397" stroke-width="2"/>
-<text x="57" y="613" font-family="Georgia,serif" font-size="34" fill="#2b4d5b">An extraordinary journey</text>
-<text x="57" y="677" font-family="Arial,sans-serif" font-size="17" fill="#96664f" letter-spacing="2">CURIOSITY  ·  COURAGE  ·  INDEPENDENCE</text>
 </svg></div>
-<div class="copy"><div class="eyebrow">Kapitola desátá · Dobrodružství pokračuje</div><h2>Jak neobyčejný život jsi <span class="accent">prožil.</span></h2><p>Překročil jsi hranice, vystřídal povolání, poznával svět, založil rodinu a předával dál českou kulturu. A znovu a znovu jsi objevoval něco, co tě nadchlo.</p><p>Ukázal jsi nám, že překážky se dají překonat a že neznámého se nemusíme bát — můžeme ho jít prozkoumat.</p><p class="note">Máš být na co hrdý, tati.</p></div></section>
+<div class="copy"><div class="eyebrow">Dobrodružství pokračuje</div><h2>Jak neobyčejný život jsi <span class="accent">prožil.</span></h2><p>Překročil jsi hranice, vystřídal povolání, poznával svět, založil rodinu a předával dál českou kulturu. A znovu a znovu jsi objevoval něco, co tě nadchlo.</p><p>Ukázal jsi nám, že překážky se dají překonat a že neznámého se nemusíme bát — můžeme ho jít prozkoumat.</p><p class="note">Máš být na co hrdý, tati.</p></div></section>
 <!-- 12 -->
-<section class="scene dark ending" lang="cs" style="--bg:#152b3b"><div class="art"><svg viewBox="0 0 700 850" preserveAspectRatio="xMidYMid meet" role="img" aria-label="The next chapter is coming">
+<section class="scene dark ending" lang="cs" style="--bg:#152b3b"><div class="art"><svg viewBox="0 0 700 560" preserveAspectRatio="xMidYMid meet" role="img" aria-label="The next chapter is coming">
 <rect width="700" height="850" fill="#243f4e"/>
 
 <rect width="700" height="560" fill="#243f4e"/><circle cx="350" cy="264" r="188" fill="#d1a06e"/>
@@ -318,14 +309,10 @@
 </g>
 <g fill="#f3e5c6"><circle cx="103" cy="118" r="6" class="star"/><circle cx="585" cy="348" r="7" class="star"/><circle cx="123" cy="419" r="5" class="star"/></g>
 
-<rect x="25" y="560" width="650" height="243" fill="#f0e8d8" stroke="#445e62" stroke-width="2"/>
-<path d="M57 624H643M57 756H643" stroke="#c7b397" stroke-width="2"/>
-<text x="57" y="613" font-family="Georgia,serif" font-size="34" fill="#2b4d5b">The next chapter is coming</text>
-<text x="57" y="677" font-family="Arial,sans-serif" font-size="17" fill="#96664f" letter-spacing="2">A NEW WINDOW ON THE WORLD</text>
 </svg></div>
-<div class="copy"><div class="eyebrow">Další kapitola · Osmdesátkou to nekončí</div><h2>Na všechno, co <span style="color:#e1af7b">teprve přijde.</span></h2><p>I v osmdesáti je spousta nových vynálezů, nad kterými můžeš žasnout, míst, která stojí za to znovu objevit, příběhů, které můžeš vyprávět, a překvapení, která na tebe čekají.</p><p>Všechno nejlepší, tati. S velkou láskou a obdivem ke všemu, co jsi dokázal.</p><div class="gift"><strong>A ještě něco… 🎁</strong><p>Tvůj nový iPad už je na cestě! Dorazí za pár týdnů. Ať je dalším oknem do světa všeho, co tě pořád zajímá.</p></div></div></section>
+<div class="copy"><div class="eyebrow">Osmdesátkou to nekončí</div><h2>Na všechno, co <span style="color:#e1af7b">teprve přijde.</span></h2><p>I v osmdesáti je spousta nových vynálezů, nad kterými můžeš žasnout, míst, která stojí za to znovu objevit, příběhů, které můžeš vyprávět, a překvapení, která na tebe čekají.</p><p>Všechno nejlepší, tati. S velkou láskou a obdivem ke všemu, co jsi dokázal.</p><div class="gift"><strong>A ještě něco… 🎁</strong><p>Tvůj nový iPad už je na cestě! Dorazí za pár týdnů. Ať je dalším oknem do světa všeho, co tě pořád zajímá.</p></div></div></section>
 <!-- 13 -->
-<section class="scene dark ending" lang="en" style="--bg:#203547"><div class="art"><svg viewBox="0 0 700 850" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Happy 80th birthday, Dad">
+<section class="scene dark ending" lang="en" style="--bg:#203547"><div class="art"><svg viewBox="0 0 700 560" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Happy 80th birthday, Dad">
 <rect width="700" height="850" fill="#365968"/>
 
 <rect width="700" height="560" fill="#365968"/>
@@ -334,13 +321,9 @@
 <g fill="#c97d61"><path d="M75 114l85 48-70 58Z"/><path d="M552 340l92-28-35 98Z"/></g>
 <g fill="#f5e5c4"><circle cx="39" cy="22" r="3"/><circle cx="140" cy="159" r="4"/><circle cx="241" cy="296" r="5"/><circle cx="342" cy="433" r="3"/><circle cx="443" cy="35" r="4"/><circle cx="544" cy="172" r="5"/><circle cx="645" cy="309" r="3"/><circle cx="56" cy="446" r="4"/><circle cx="157" cy="48" r="5"/><circle cx="258" cy="185" r="3"/><circle cx="359" cy="322" r="4"/><circle cx="460" cy="459" r="5"/><circle cx="561" cy="61" r="3"/><circle cx="662" cy="198" r="4"/><circle cx="73" cy="335" r="5"/><circle cx="174" cy="472" r="3"/><circle cx="275" cy="74" r="4"/><circle cx="376" cy="211" r="5"/><circle cx="477" cy="348" r="3"/><circle cx="578" cy="485" r="4"/></g>
 
-<rect x="25" y="560" width="650" height="243" fill="#f0e8d8" stroke="#445e62" stroke-width="2"/>
-<path d="M57 624H643M57 756H643" stroke="#c7b397" stroke-width="2"/>
-<text x="57" y="613" font-family="Georgia,serif" font-size="34" fill="#2b4d5b">Happy 80th birthday, Dad</text>
-<text x="57" y="677" font-family="Arial,sans-serif" font-size="17" fill="#96664f" letter-spacing="2">VŠECHNO NEJLEPŠÍ  ·  JOYEUX ANNIVERSAIRE</text>
 </svg></div>
 <div class="copy"><div class="eyebrow">For you, Dad · With love</div><h2>Happy 80th <span style="color:#e1af7b">birthday!</span></h2>
-<p style="font-size:clamp(1rem,1.5vw,1.4rem);line-height:1.9">Všechno nejlepší k 80. narozeninám, tati!<br>Joyeux 80e anniversaire, papa !<br>С 80-летием, папа!</p>
+<p style="font-size:clamp(1rem,1.5vw,1.4rem);line-height:1.9">Všechno nejlepší k 80. narozeninám, tati!<br>Joyeux 80e anniversaire, papa !<br></p>
 <p class="note" style="font-size:1.05rem;color:#f5e3c8;margin-top:1.6rem">Love, Daniel ♥</p></div></section>
 </main>
 <nav class="controls" aria-label="Story navigation"><button id="prev" aria-label="Previous chapter" title="Previous chapter">‹</button><span id="count" class="count">01 / 13</span><button id="next" aria-label="Next chapter" title="Next chapter">›</button><button id="restart" aria-label="Start over" title="Start over" style="font-size:18px">↺</button></nav>
